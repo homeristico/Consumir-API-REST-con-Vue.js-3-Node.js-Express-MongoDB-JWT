@@ -93,7 +93,7 @@ const login = async (req, res) => {
      
 }
 
-const saludo = async (req, res) => {
+const admin = async (req, res) => {
     res.json({
         adios:'hasta nunca',
         user: req.user
@@ -109,6 +109,6 @@ const saludo = async (req, res) => {
 
 module.exports = {
     register,
-    saludo,
+    admin,
     login
 };

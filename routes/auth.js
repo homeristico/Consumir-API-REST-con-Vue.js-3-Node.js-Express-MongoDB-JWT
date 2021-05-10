@@ -12,7 +12,7 @@ const userController = require('./../controller/UserController');
 
 // rutas user
 router.post('/register', userController.register);
-router.get('/saludo', verifyToken, userController.saludo);
+router.get('/admin', verifyToken, userController.admin);
 router.post('/login', userController.login);
 
 
